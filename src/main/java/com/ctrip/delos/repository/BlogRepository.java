@@ -1,4 +1,4 @@
-package com.ctrip.delos.Repository;
+package com.ctrip.delos.repository;
 
 import com.ctrip.delos.entity.Blog;
 import org.springframework.data.jpa.repository.JpaRepository;

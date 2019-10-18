@@ -1,6 +1,6 @@
 package com.ctrip.delos.controller;
 
-import com.ctrip.delos.Repository.BlogRepository;
+import com.ctrip.delos.repository.BlogRepository;
 import com.ctrip.delos.entity.Blog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;

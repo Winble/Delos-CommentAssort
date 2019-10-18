@@ -21,6 +21,9 @@ public class Blog {
     @Column(name = "BlogDate")
     private Timestamp blogDate;
 
+    @Column(name = "IsDetected")
+    private Boolean isDetected;
+
     @Column(name = "DataChange_CreateTime")
     private Timestamp dataChangeCreateTime;
 
@@ -59,6 +62,14 @@ public class Blog {
         this.blogDate = blogDate;
     }
 
+    public Boolean getDetected() {
+        return isDetected;
+    }
+
+    public void setDetected(Boolean detected) {
+        isDetected = detected;
+    }
+
     public Timestamp getDataChangeCreateTime() {
         return dataChangeCreateTime;
     }
@@ -82,6 +93,7 @@ public class Blog {
             ", userName='" + userName + '\'' +
             ", blogContent='" + blogContent + '\'' +
             ", blogDate=" + blogDate +
+            ", isDetected=" + isDetected +
             ", dataChangeCreateTime=" + dataChangeCreateTime +
             ", dataChangeLastTime=" + dataChangeLastTime +
             '}';
